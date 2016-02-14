@@ -3,7 +3,7 @@ angular.
 		'ui.router'
 	])
 	.config([ '$urlRouterProvider', '$stateProvider', function( $urlRouterProvider, $stateProvider ) {
-		$urlRouterProvider.otherwise('/');
+		$urlRouterProvider.otherwise('/home');
 
 		$stateProvider
 			.state('home', {
@@ -16,18 +16,18 @@ angular.
 			})
 			.state('tabela', {
 				url: '/tabela',
-				tamplateUrl: 'tabela.php'
+				templateUrl: 'tabela.php'
 			})
 			.state('strzelcy', {
 				url: '/strzelcy',
-				tamplateUrl: 'strzelcy.php'
+				templateUrl: 'strzelcy.php'
 			})
 			.state('zespoly', {
 				url: '/zespoly',
-				tamplateUrl: 'zespoly.php'
+				templateUrl: 'zespoly.php'
 			})
 			.state('autor', {
 				url: '/autor',
-				tamplateUrl: 'autor.php'
+				templateUrl: 'autor.php'
 			})
 	}])
